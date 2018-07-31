@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Gestion Ciudadana</title>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-rc.2/css/materialize.min.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <script src="https://www.gstatic.com/firebasejs/5.3.0/firebase.js"></script>
+    <script src="https://cdn.firebase.com/libs/firebaseui/3.1.1/firebaseui.js"></script>
+    <link type="text/css" rel="stylesheet" href="https://cdn.firebase.com/libs/firebaseui/3.1.1/firebaseui.css" />
+    <style>
+        body{
+            background-image: url("./img/fondo.jpg");
+            -o-background-size: cover;
+            -moz-background-size: cover;
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            color: #fff;
+        }
+
+        .login{
+            margin-top: 5px;
+        }
+
+        .login .card{
+            background: rgba(0, 0, 0, .6);
+        }
+
+        .login label{
+            font-size: 16px;
+            color: #ccc;
+        }
+
+        .login input{
+            font-size: 20px !important;
+            /*color: #fff;*/
+        }
+
+        .login button:hover{
+            padding: 0px 40px;
+        }
+
+    </style>
+</head>
+<body>
+<div class="container">
+    <div class="col s12">
+        <h1 style="text-align: center">Gestión Ciudadana</h1>
+    </div>
+    <div class="row login">
+        <div id="firebaseui-auth-container"></div>
+        <div id="loader">Loading...</div>
+        <!--<div class="col s12 14 offset-14">-->
+            <!--<div class="card" >-->
+                <!--<div class="card-action blue white-text">-->
+                    <!--<h3>Iniciar Sesión</h3>-->
+                <!--</div>-->
+                <!--<div class="card-content">-->
+                    <!--<div class="form-field">-->
+                        <!--<label for="user">Usuario/Correo</label>-->
+                        <!--<input type="text" id="user">-->
+                    <!--</div>-->
+                    <!--<br>-->
+                    <!--<div class="form-field">-->
+                        <!--<label for="pass">Contraseña</label>-->
+                        <!--<input type="password" id="pass">-->
+                    <!--</div>-->
+                    <!--<br>-->
+                    <!--<div class="form-field">-->
+                        <!--<input type="checkbox" id="rec">-->
+                        <!--<label for="rec">Recordarme</label>-->
+                    <!--</div>-->
+                    <!--<br>-->
+                    <!--<div class="form-field center-align">-->
+                        <!--<button class="btn-large blue">Iniciar</button>-->
+                    <!--</div>-->
+                    <!--<br>-->
+                    <!--<div class="form-field center-align">-->
+                        <!--<a href="register.html"><button class="btn-large green">Registrarse</button></a>-->
+                    <!--</div>-->
+                    <!--<br>-->
+                <!--</div>-->
+            <!--</div>-->
+        <!--</div>-->
+    </div>
+</div>
+
+
+<script   src="https://code.jquery.com/jquery-3.3.1.min.js"   integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="   crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-rc.2/js/materialize.min.js"></script>
+<script src="js/firebase.js"></script>
+<script src="js/login.js"></script>
+</body>
+</html>

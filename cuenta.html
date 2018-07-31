@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Panel de usuario</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-rc.2/css/materialize.min.css">
+
+    <script src="https://www.gstatic.com/firebasejs/5.3.0/firebase.js"></script>
+    <style>
+        body{
+            background-image: url("./img/fondo.jpg");
+            -o-background-size: cover;
+            -moz-background-size: cover;
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            color: #fff;
+        }
+
+        #columna{
+            background: rgba(0, 0, 0, .6);
+            text-align: center;
+            border-radius: 3%;
+        }
+
+    </style>
+</head>
+<body>
+<div class="container">
+    <div class="row">
+        <div class="col s12" style="text-align: center">
+            <h2>Hola <spam id="usuario"></spam>!</h2>
+            <p class="flow-text">Bienvenido a nuestro panel de usuario, en el mismo puede cambiar su clave, enviarle mensajes al administrador y ver los reportes creados hasta el momento.</p>
+        </div>
+        <div id="columna" class="col s6">
+            <label>Cambiar contrasena</label>
+            <div class="row">
+                <div class="input-field col s12">
+                    <input id="password" type="password" class="validate">
+                    <label for="password">Nueva clave</label>
+                    <a href="cuenta.html" class="waves-effect waves-light btn"><i class="material-icons left">save</i>Guardar</a><br><br>
+                </div>
+            </div>
+        </div>
+        <div id="columna" class="col s6">
+            <label>Mis reportes</label>
+        </div>
+        <div class="col s12">
+            <h3>Contacto</h3>
+        </div>
+
+        <div id="columna" class="col s6">
+            <label>Enviar mensajes al administrador</label>
+            <div class="input-field col s6">
+                <input id="titulo" type="text" class="validate">
+                <label for="titulo">Titulo</label>
+            </div>
+            <div class="row">
+                <form class="col s12">
+                    <div class="row">
+                        <div class="input-field col s12">
+                            <textarea id="contenido" class="materialize-textarea"></textarea>
+                            <label for="contenido">Escriba aquí su mensaje</label>
+                            <a href="cuenta.html" class="waves-effect waves-light btn"><i class="material-icons left">send</i>Enviar</a><br><br>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script   src="https://code.jquery.com/jquery-3.3.1.min.js"   integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="   crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-rc.2/js/materialize.min.js"></script>
+<script src="js/firebase.js"></script>
+<script src="js/main.js"></script>
+</body>
+</html>

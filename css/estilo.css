@@ -1,0 +1,40 @@
+@import url('https://fonts.googleapis.com/css?family=Raleway');
+@import url('https://fonts.googleapis.com/css?family=Lobster+Two|Raleway');
+
+body {
+    background-image: url("../img/fondo.jpg");
+    -o-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+    font-family: 'Raleway', sans-serif;
+}
+h1 {
+    font-family: 'Lobster Two', cursive;
+}
+
+form{
+    margin-top: 30px;
+}
+
+input{
+    font-family: 'Raleway', sans-serif;
+    font-weight: bold;
+    font-size: 20px !important;
+    color: white;
+}
+
+button{
+    font-family: 'Raleway', sans-serif;
+    margin-left: 55px;
+    margin-top: 20px;
+}
+
+.material-icons{
+    color:orange;
+    position:relative;
+    top:10px;
+}
+
+form{
+    background: rgba(0, 0, 0, .6);
+}

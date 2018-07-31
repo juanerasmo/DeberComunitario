@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Bienvenido</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-rc.2/css/materialize.min.css">
+
+    <script src="https://www.gstatic.com/firebasejs/5.3.0/firebase.js"></script>
+
+    <style>
+        body{
+            background-image: url("./img/fondo.jpg");
+            -o-background-size: cover;
+            -moz-background-size: cover;
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            color: #fff;
+        }
+
+        #columna{
+            background: rgba(0, 0, 0, .6);
+            text-align: center;
+            border-radius: 3%;
+        }
+
+
+    </style>
+</head>
+<body>
+
+<!--Slider-->
+<div class="slider">
+    <ul class="slides">
+        <li>
+            <img src="https://lorempixel.com/580/250/nature/1"> <!-- random image -->
+            <div class="caption center-align">
+                <h3>Bienvenido <spam id="usuario"></spam> a gestión ciudada!</h3>
+                <h5 class="light grey-text text-lighten-3">Here's our small slogan.</h5>
+            </div>
+        </li>
+        <li>
+            <img src="https://lorempixel.com/580/250/nature/2"> <!-- random image -->
+            <div class="caption left-align">
+                <h3>Left Aligned Caption</h3>
+                <h5 class="light grey-text text-lighten-3">Here's our small slogan.</h5>
+            </div>
+        </li>
+        <li>
+            <img src="https://lorempixel.com/580/250/nature/3"> <!-- random image -->
+            <div class="caption right-align">
+                <h3>Right Aligned Caption</h3>
+                <h5 class="light grey-text text-lighten-3">Here's our small slogan.</h5>
+            </div>
+        </li>
+        <li>
+            <img src="https://lorempixel.com/580/250/nature/4"> <!-- random image -->
+            <div class="caption center-align">
+                <h3>This is our big Tagline!</h3>
+                <h5 class="light grey-text text-lighten-3">Here's our small slogan.</h5>
+            </div>
+        </li>
+    </ul>
+</div>
+<!--Division y reportes-->
+
+<div class="container">
+    <div class="row">
+        <div id="columna" class="col s6">
+            <h4>Ultimos reportes</h4>
+        </div>
+        <div id="columna" class="col s6">
+            <h4>Panel de usuario</h4>
+            <a href="cuenta.html" class="waves-effect waves-light btn"><i class="material-icons left">person</i>Mi Cuenta</a><br><br>
+            <a href="report.html" class="waves-effect waves-light btn"><i class="material-icons left">edit</i>Crear reporte</a><br><br>
+            <!--<a href="contact.html" class="waves-effect waves-light btn"><i class="material-icons left">phone</i>Contacto</a><br><br>-->
+            <a href="admin.html" class="waves-effect waves-light btn"><i class="material-icons left">block</i>Administrar</a><br><br>
+
+        </div>
+    </div>
+</div>
+
+
+<script   src="https://code.jquery.com/jquery-3.3.1.min.js"   integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="   crossorigin="anonymous"></script>
+<script>
+    document.addEventListener('DOMContentLoaded', function() {
+        var elems = document.querySelectorAll('.slider');
+        var instances = M.Slider.init(elems, options);
+    });
+
+    // Or with jQuery
+
+    $(document).ready(function(){
+        $('.slider').slider();
+    });
+</script>
+<!--para logout se debera escribir en onclick "mainApp.logOut()"-->
+<script   src="https://code.jquery.com/jquery-3.3.1.min.js"   integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="   crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-rc.2/js/materialize.min.js"></script>
+<script src="js/firebase.js"></script>
+<script src="js/main.js"></script>
+</body>
+</html>
